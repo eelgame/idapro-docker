@@ -17,10 +17,10 @@ RUN dpkg --add-architecture i386 \
     && wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add - \
     && apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main' \
     && add-apt-repository ppa:cybermax-dexter/sdl2-backport -y \
-    && apt-get update -y \
+    && apt update -y \
     && apt install --install-recommends winehq-stable -y \
     && apt install libvulkan1 libvulkan-dev -y \
-    && apt-get install winbind -y \
+    && apt install winbind -y \
     && apt install mono-complete -y \
     && mkdir /var/run/sshd \
     && mkdir /root/.ssh \
