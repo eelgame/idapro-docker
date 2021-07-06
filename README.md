@@ -5,7 +5,7 @@
 
 **This will let you run IDA Pro (Windows) on Linux using Docker and Wine with X11 Forwarding over SSH.**
 
-You may also adjust this to your own liking to run the linux version without wine.
+You may also adjust this to your own liking to run the Linux version without Wine.
 
 ---
 ## Installation
