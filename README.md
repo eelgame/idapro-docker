@@ -30,6 +30,7 @@ $ wine python-3.9.6-amd64.exe # Remember to add Python 3.9 to PATH.
 
 ---
 ## Notes
+- Tested with IDA Pro 7.5
 - This was thrown together in a couple of hours since I wanted IDA Pro to work on my linux distro, but I did not have the linux version of IDA Pro.
 - Other related projects worth looking at:
     - https://github.com/intezer/docker-ida
