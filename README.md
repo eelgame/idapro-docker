@@ -10,7 +10,7 @@ You may also adjust this to your own liking to run the Linux version without Win
 ---
 ## Installation
 1. Ensure you have a SSH public key in `~/.ssh/`.
-2. Add the extracted IDA Pro files to the IDA folder.
+2. Add the extracted IDA Pro files to a folder named `IDA` within `idapro-docker`.
 3. Build the Docker idapro image: `./build.sh`
 4. Run a new container from image: `./run.sh`
 5. Open a shell with: `./shell.sh`
