@@ -3,7 +3,7 @@ MAINTAINER Redacted <redacted@redacted>
 
 WORKDIR /root
 # ADD id_rsa.pub /root/client.pub
-ADD IDA.zip /root/IDA
+ADD IDA.tar.gz /root/IDA
 # RUN cat /root/client.pub >> /root/.ssh/authorized_keys
 
 ENTRYPOINT ["sh", "-c", "/usr/sbin/sshd && tail -f /dev/null"]
