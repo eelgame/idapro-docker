@@ -23,7 +23,7 @@ RUN dpkg --add-architecture i386 \
 
 WORKDIR /root
 # ADD id_rsa.pub /root/client.pub
-ADD IDA /root/IDA
+ADD IDA.zip /root/IDA
 # RUN cat /root/client.pub >> /root/.ssh/authorized_keys
 
 ENTRYPOINT ["sh", "-c", "/usr/sbin/sshd && tail -f /dev/null"]
