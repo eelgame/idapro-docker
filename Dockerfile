@@ -22,8 +22,8 @@ RUN dpkg --add-architecture i386 \
     && grep "^X11UseLocalhost" /etc/ssh/sshd_config || echo "X11UseLocalhost no" >> /etc/ssh/sshd_config
 
 WORKDIR /root
-ADD id_rsa.pub /root/client.pub
+# ADD id_rsa.pub /root/client.pub
 ADD IDA /root/IDA
-RUN cat /root/client.pub >> /root/.ssh/authorized_keys
+# RUN cat /root/client.pub >> /root/.ssh/authorized_keys
 
 ENTRYPOINT ["sh", "-c", "/usr/sbin/sshd && tail -f /dev/null"]
